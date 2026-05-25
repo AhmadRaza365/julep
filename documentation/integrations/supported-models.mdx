@@ -35,7 +35,7 @@ Here are the Anthropic models supported by Julep:
 | claude-3.5-sonnet-20240620 | 200K tokens | 4K tokens | ✅ | ✅ | ❌ | ❌ | Premium |
 | claude-3.5-sonnet-20241022 | 200K tokens | 8K tokens | ✅ | ✅ | ❌ | ✅ | Premium |
 | claude-3.7-sonnet | 200K tokens | 8K tokens | ✅ | ✅ | ❌ | ✅ | Premium |
-| claude-haiku-4-5 | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
+| claude-haiku-4-5 | 200K tokens | 64K tokens | ✅ | ✅ | ❌ | ✅ | Standard |
 | claude-opus-4 | 200K tokens | 32K tokens | ✅ | ✅ | ❌ | ✅ | Enterprise |
 | claude-opus-4-1 | 200K tokens | 32K tokens | ✅ | ✅ | ❌ | ✅ | Enterprise |
 | claude-sonnet-4 | 1M tokens | 64K tokens | ✅ | ✅ | ❌ | ✅ | Premium |
@@ -48,13 +48,13 @@ Here are the Google models supported by Julep:
 
 | Model Name | Context Window | Max Output | Tool Calling | Vision | Audio | Caching | Cost Tier |
 |------------|----------------|------------|--------------|--------|-------|---------|----------|
-| gemini-1.5-pro | 2M tokens | 8K tokens | ✅ | ✅ | ❌ | ❌ | Standard |
-| gemini-1.5-pro-latest | 1M tokens | 8K tokens | ✅ | ✅ | ❌ | ❌ | Premium |
+| gemini-1.5-pro | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
+| gemini-1.5-pro-latest | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
 | gemini-2.0-flash | 1M tokens | 8K tokens | ✅ | ✅ | ✅ | ✅ | Budget |
 | gemini-2.5-flash | 1M tokens | 65K tokens | ✅ | ✅ | ❌ | ✅ | Budget |
 | gemini-2.5-pro | 1M tokens | 65K tokens | ✅ | ✅ | ✅ | ✅ | Standard |
-| gemini-2.5-pro-preview-03-25 | 1M tokens | 65K tokens | ✅ | ✅ | ❌ | ✅ | Standard |
-| gemini-2.5-pro-preview-06-05 | 1M tokens | 65K tokens | ✅ | ✅ | ❌ | ✅ | Standard |
+| gemini-2.5-pro-preview-03-25 | 1M tokens | 65K tokens | ✅ | ✅ | ✅ | ✅ | Standard |
+| gemini-2.5-pro-preview-06-05 | 1M tokens | 65K tokens | ✅ | ✅ | ✅ | ✅ | Standard |
 
 
 ### OpenAI
@@ -71,15 +71,15 @@ Here are the OpenAI models supported by Julep:
 | gpt-4o-mini | 128K tokens | 16K tokens | ✅ | ✅ | ❌ | ✅ | Budget |
 | gpt-5 | 272K tokens | 128K tokens | ✅ | ✅ | ❌ | ✅ | Standard |
 | gpt-5-2025-08-07 | 272K tokens | 128K tokens | ✅ | ✅ | ❌ | ✅ | Standard |
-| gpt-5-chat | 272K tokens | 128K tokens | ❌ | ✅ | ❌ | ✅ | Standard |
+| gpt-5-chat | 128K tokens | 16K tokens | ❌ | ✅ | ❌ | ✅ | Standard |
 | gpt-5-chat-latest | 128K tokens | 16K tokens | ❌ | ✅ | ❌ | ✅ | Standard |
 | gpt-5-mini | 272K tokens | 128K tokens | ✅ | ✅ | ❌ | ✅ | Budget |
 | gpt-5-mini-2025-08-07 | 272K tokens | 128K tokens | ✅ | ✅ | ❌ | ✅ | Budget |
 | gpt-5-nano | 272K tokens | 128K tokens | ✅ | ✅ | ❌ | ✅ | Budget |
 | gpt-5-nano-2025-08-07 | 272K tokens | 128K tokens | ✅ | ✅ | ❌ | ✅ | Budget |
 | o1 | 200K tokens | 100K tokens | ✅ | ✅ | ❌ | ✅ | Enterprise |
-| o1-mini | 128K tokens | 65K tokens | ❌ | ✅ | ❌ | ✅ | Standard |
-| o1-preview | 128K tokens | 32K tokens | ❌ | ✅ | ❌ | ✅ | Enterprise |
+| o1-mini | 128K tokens | 65K tokens | ✅ | ❌ | ❌ | ✅ | Standard |
+| o1-preview | 128K tokens | 32K tokens | ✅ | ❌ | ❌ | ✅ | Enterprise |
 | o3-mini | 200K tokens | 100K tokens | ✅ | ❌ | ❌ | ✅ | Standard |
 | o4-mini | 200K tokens | 100K tokens | ✅ | ✅ | ❌ | ✅ | Standard |
 
@@ -90,14 +90,14 @@ Here are the Groq models supported by Julep:
 
 | Model Name | Context Window | Max Output | Tool Calling | Vision | Audio | Caching | Cost Tier |
 |------------|----------------|------------|--------------|--------|-------|---------|----------|
-| deepseek-r1-distill-llama-70b | 128K tokens | 128K tokens | ✅ | ❌ | ❌ | ❌ | Standard |
+| deepseek-r1-distill-llama-70b | 32K tokens | 8K tokens | ❌ | ❌ | ❌ | ❌ | Standard |
 | gemma2-9b-it | 8K tokens | 8K tokens | ❌ | ❌ | ❌ | ❌ | Budget |
 | llama-3.1-8b | 128K tokens | 8K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
 | llama-3.1-8b-instant | 128K tokens | 8K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
 | llama-3.3-70b-versatile | 128K tokens | 32K tokens | ✅ | ❌ | ❌ | ❌ | Standard |
 | meta-llama/Llama-Guard-4-12B | 163K tokens | 163K tokens | ❌ | ❌ | ❌ | ❌ | Budget |
-| meta-llama/llama-4-maverick-17b-128e-instruct | 131K tokens | 8K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
-| meta-llama/llama-4-scout-17b-16e-instruct | 131K tokens | 8K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
+| meta-llama/llama-4-maverick-17b-128e-instruct | 131K tokens | 8K tokens | ✅ | ✅ | ❌ | ❌ | Budget |
+| meta-llama/llama-4-scout-17b-16e-instruct | 131K tokens | 8K tokens | ✅ | ✅ | ❌ | ❌ | Budget |
 | qwen/qwen3-32b | 131K tokens | 131K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
 
 
@@ -107,7 +107,7 @@ Here are the OpenRouter models supported by Julep:
 
 | Model Name | Context Window | Max Output | Tool Calling | Vision | Audio | Caching | Cost Tier |
 |------------|----------------|------------|--------------|--------|-------|---------|----------|
-| deepseek-chat | 131K tokens | 8K tokens | ✅ | ❌ | ❌ | ✅ | Standard |
+| deepseek-chat | 131K tokens | 8K tokens | ✅ | ❌ | ❌ | ✅ | Budget |
 | deepseek/deepseek-r1-distill-llama-70b | 65K tokens | 8K tokens | ✅ | ❌ | ❌ | ✅ | Standard |
 | deepseek/deepseek-r1-distill-qwen-32b | 65K tokens | 8K tokens | ✅ | ❌ | ❌ | ✅ | Standard |
 | eva-llama-3.33-70b | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
@@ -116,20 +116,20 @@ Here are the OpenRouter models supported by Julep:
 | l3.1-euryale-70b | 200K tokens | 100K tokens | ✅ | ✅ | ❌ | ✅ | Enterprise |
 | l3.3-euryale-70b | 200K tokens | 100K tokens | ✅ | ✅ | ❌ | ✅ | Enterprise |
 | magnum-v4-72b | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
-| meta-llama/llama-3.1-8b-instruct | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
-| meta-llama/llama-3.3-70b-instruct | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
-| meta-llama/llama-4-scout | 131K tokens | 8K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
+| meta-llama/llama-3.1-8b-instruct | 16K tokens | 16K tokens | ❌ | ❌ | ❌ | ❌ | Budget |
+| meta-llama/llama-3.3-70b-instruct | 131K tokens | 120K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
+| meta-llama/llama-4-scout | 131K tokens | 8K tokens | ✅ | ✅ | ❌ | ❌ | Budget |
 | mistral-large-2411 | 128K tokens | 128K tokens | ✅ | ❌ | ❌ | ❌ | Premium |
-| openrouter/meta-llama/llama-4-maverick | 131K tokens | 8K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
+| openrouter/meta-llama/llama-4-maverick | 131K tokens | 8K tokens | ✅ | ✅ | ❌ | ❌ | Budget |
 | openrouter/meta-llama/llama-4-maverick:free | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
-| openrouter/meta-llama/llama-4-scout | 131K tokens | 8K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
+| openrouter/meta-llama/llama-4-scout | 131K tokens | 8K tokens | ✅ | ✅ | ❌ | ❌ | Budget |
 | openrouter/meta-llama/llama-4-scout:free | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
 | perplexity/sonar | 128K tokens | Unknown | ❌ | ❌ | ❌ | ❌ | Standard |
 | perplexity/sonar-deep-research | 128K tokens | Unknown | ❌ | ❌ | ❌ | ❌ | Premium |
 | perplexity/sonar-pro | 200K tokens | 8K tokens | ❌ | ❌ | ❌ | ❌ | Premium |
 | perplexity/sonar-reasoning | 128K tokens | Unknown | ❌ | ❌ | ❌ | ❌ | Standard |
 | perplexity/sonar-reasoning-pro | 128K tokens | Unknown | ❌ | ❌ | ❌ | ❌ | Premium |
-| qwen-2.5-72b-instruct | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | Unknown |
+| qwen-2.5-72b-instruct | 32K tokens | 8K tokens | ✅ | ❌ | ❌ | ❌ | Budget |
 
 
 ### Amazon Nova
